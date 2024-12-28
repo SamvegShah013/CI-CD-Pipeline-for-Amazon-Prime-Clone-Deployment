@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Samcloud-app
+  labels:
+    app: Samcloud-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Samcloud-app
+  template:
+    metadata:
+      labels:
+        app: Samcloud-app
+    spec:
+      containers:
+<<<<<<< HEAD
+      - name: Samcloud-container
+        image: 309395755719.dkr.ecr.us-east-1.amazonaws.com/amazon-prime:latest
+=======
+      - name: pandacloud-container
+        image: 339712996015.dkr.ecr.ap-south-1.amazonaws.com/amazon-prime:latest
+>>>>>>> ff126d53d6d4ae6fddd22c8472bdb480dccd7900
+        ports:
+        - containerPort: 3000
+...
