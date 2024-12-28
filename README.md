@@ -1,2 +1,2 @@
 # CICD Pipeline for Amazon Prime Clone Deployment
-![Pipeline Overview](./src/Overview.png)
+![Pipeline_Overview](./src/Overview.png)
